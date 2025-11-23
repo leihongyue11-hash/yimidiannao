@@ -171,7 +171,7 @@
         <div class="card">
           <h3>今日头条号</h3>
           <p>发布电脑技术相关视频内容</p>
-          <a href="https://www.toutiao.com/">查看项目</a>
+          <a href="https://www.toutiao.com/c/user/token/Cia_1cp4wTlFYV0nDzG1WckdQlQJQoI7aqen6BgMhWbgqGGSHtqUiRpJCjwAAAAAAAAAAAAAT791-tpl6KJg312RKFVizIbYlxK9n0ePMWFfIg7SNXzUANYlMEt0V4rIlV11SZb5v_oQ_6aCDhjDxYPqBCIBA9CBvLQ=/?source=list&log_from=ac989b9e65c1a_1763894140325">查看项目</a>
         </div>
 
         <div class="card">
