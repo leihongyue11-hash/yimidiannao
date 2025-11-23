@@ -131,7 +131,7 @@
   <div id="particles-js"></div>
 
   <header>
-    <img src="/mnt/data/微信图片_20250609201357.png" class="logo" alt="壹米说电脑 Logo" />
+    <img src="images/微信图片_20250609201357.png" class="logo" alt="壹米说电脑 Logo" />
     <h1>壹米说电脑</h1>
     <p>专注电脑硬件｜系统技巧｜维修经验分享</p>
   </header>
@@ -185,7 +185,7 @@
     <!-- 二维码 section -->
     <div class="section qrcode-box">
       <h2>关注「壹米说电脑」公众号</h2>
-      <img src="/mnt/data/qrcode_for_gh_ea20302ac613_430.jpg" alt="公众号二维码" />
+      <img src="images/qrcode_for_gh_ea20302ac613_430.jpg" alt="公众号二维码" />
       <p style="margin-top: 10px;">获取更多电脑技巧与实用工具</p>
     </div>
 
