@@ -148,10 +148,17 @@
 
       <div class="skills">
         <div class="card">电脑维修</div>
-        <div class="card">软件技巧分享</div>
-        <div class="card">硬件评测</div>
-        <div class="card">自动化脚本编写</div>
         <div class="card">维修故事案例</div>
+        <div class="card">硬件评测</div>
+        <div class="card">
+        <h3> 壹米说电脑工具箱</h3>
+        <p>电脑维修检测、各种常用软件、定制工具箱</p>
+        <a href="https://pan.baidu.com/s/1rs0AVBK9UjF9YFB-yZfFww?pwd=zhxc" target="_blank" rel="noopener noreferrer">网盘下载</a>
+</div>
+        <div class="card">
+        <h3>软件技巧分享</h3>
+        <p>壹米说电脑分享的软件合集</p>
+        <a href="https://pan.baidu.com/s/5K19zjFNfDDXftIR3TrgSlA" target="_blank" rel="noopener noreferrer">知识库</a></div>
         <div class="card">系统重装与优化</div>
       </div>
 
@@ -164,19 +171,20 @@
 
         <div class="card">
           <h3>公众号</h3>
-          <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw">查看文章</a>
           <p>提供最新的维修技巧与硬件知识。</p>
+          <a href="https://mp.weixin.qq.com/s/havu_WZ8Miv27NmwWuRsOw" target="_blank" rel="noopener noreferrer">查看文章</a>
         </div>
 
         <div class="card">
           <h3>今日头条号</h3>
           <p>发布电脑技术相关视频内容</p>
-          <a href="https://www.toutiao.com/c/user/token/Cia_1cp4wTlFYV0nDzG1WckdQlQJQoI7aqen6BgMhWbgqGGSHtqUiRpJCjwAAAAAAAAAAAAAT791-tpl6KJg312RKFVizIbYlxK9n0ePMWFfIg7SNXzUANYlMEt0V4rIlV11SZb5v_oQ_6aCDhjDxYPqBCIBA9CBvLQ=/?source=list&log_from=ac989b9e65c1a_1763894140325">查看项目</a>
+          <a href="https://www.toutiao.com/c/user/token/Cia_1cp4wTlFYV0nDzG1WckdQlQJQoI7aqen6BgMhWbgqGGSHtqUiRpJCjwAAAAAAAAAAAAAT791-tpl6KJg312RKFVizIbYlxK9n0ePMWFfIg7SNXzUANYlMEt0V4rIlV11SZb5v_oQ_6aCDhjDxYPqBCIBA9CBvLQ=/?source=list&log_from=ac989b9e65c1a_1763894140325" target="_blank" rel="noopener noreferrer">查看视频</a>
         </div>
 
         <div class="card">
           <h3>电脑维修服务</h3>
           <p>线上/线下全方位电脑维修服务</p>
+          <p>1039696919@qq.com</p>
         </div>
 
       </div>
@@ -212,3 +220,8 @@
 
 </body>
 </html>
+
+
+
+
+
