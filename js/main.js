@@ -1,4 +1,4 @@
-/* ===== Á£×Ó±³¾°ÅäÖÃ ===== */
+ï»¿/* ===== ç²’å­èƒŒæ™¯é…ç½® ===== */
 particlesJS("particles-js", {
   particles: {
     number: { value: 60, density: { enable: true, value_area: 1000 } },
@@ -17,13 +17,13 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-/* ===== µ¼º½À¸¹ö¶¯ ===== */
+/* ===== å¯¼èˆªæ æ»šåŠ¨ ===== */
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 
-/* ===== ÒÆ¶¯¶Ëºº±¤²Ëµ¥ ===== */
+/* ===== ç§»åŠ¨ç«¯æ±‰å ¡èœå• ===== */
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 hamburger.addEventListener("click", () => {
@@ -37,7 +37,7 @@ navLinks.querySelectorAll("a").forEach(a => {
   });
 });
 
-/* ===== ¹ö¶¯µ­Èë¶¯»­ ===== */
+/* ===== æ»šåŠ¨æ·¡å…¥åŠ¨ç”» ===== */
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
@@ -54,7 +54,7 @@ document.querySelectorAll(".glass, .section-header, .card, .article-card, .quick
   observer.observe(el);
 });
 
-/* ===== Æ½»¬Ãªµã ===== */
+/* ===== å¹³æ»‘é”šç‚¹ ===== */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     const target = document.querySelector(this.getAttribute("href"));
@@ -65,7 +65,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ===== µ¼º½¸ßÁÁ ===== */
+/* ===== å¯¼èˆªé«˜äº® ===== */
 const sections = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", () => {
   let current = "";
@@ -78,7 +78,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* ===== ËÑË÷¹¦ÄÜ ===== */
+/* ===== æœç´¢åŠŸèƒ½ ===== */
 const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchInput");
 if (searchBtn) {
@@ -90,13 +90,13 @@ if (searchBtn) {
   });
 }
 
-/* ===== Î¬ĞŞ±íµ¥Ìá½» ===== */
-/* ===== Î¬ĞŞ±íµ¥Ìá½»(ÓÊ¼şÍ¨Öª) ===== */
+/* ===== ç»´ä¿®è¡¨å•æäº¤ ===== */
+/* ===== ç»´ä¿®è¡¨å•æäº¤(é‚®ä»¶é€šçŸ¥) ===== */
 document.getElementById("repairForm").addEventListener("submit", async function(e) {
   e.preventDefault();
   const btn = this.querySelector('button[type="submit"]');
   const origText = btn.innerHTML;
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Ìá½»ÖĞ...';
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> æäº¤ä¸­...';
   btn.disabled = true;
 
   try {
@@ -108,24 +108,24 @@ document.getElementById("repairForm").addEventListener("submit", async function(
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        access_key: "4b115ebd-5252-4630-93e2-4730c28d0b95",   // ¡û Ìæ»»ÎªÄãµÄ Web3Forms key
-        subject: "¡¾Ò¼Ã×ËµµçÄÔ¡¿ĞÂÎ¬ĞŞ¶©µ¥",
-        from_name: "Ò¼Ã×µçÄÔ¹ÙÍø",
+        access_key: "YOUR_ACCESS_KEY",   // â† æ›¿æ¢ä¸ºä½ çš„ Web3Forms key
+        subject: "ã€å£¹ç±³è¯´ç”µè„‘ã€‘æ–°ç»´ä¿®è®¢å•",
+        from_name: "å£¹ç±³ç”µè„‘å®˜ç½‘",
         ...data
       })
     });
     const result = await resp.json();
     if (result.success) {
-      btn.innerHTML = '<i class="fas fa-check"></i> Ìá½»³É¹¦£¡';
+      btn.innerHTML = '<i class="fas fa-check"></i> æäº¤æˆåŠŸï¼';
       btn.style.background = "linear-gradient(135deg,#22c55e,#16a34a)";
       this.reset();
     } else {
       throw new Error(result.message);
     }
   } catch (err) {
-    btn.innerHTML = '<i class="fas fa-times"></i> Ìá½»Ê§°Ü£¬ÇëÉÔºóÖØÊÔ';
+    btn.innerHTML = '<i class="fas fa-times"></i> æäº¤å¤±è´¥ï¼Œè¯·ç¨åé‡è¯•';
     btn.style.background = "linear-gradient(135deg,#ef4444,#dc2626)";
-    console.error("±íµ¥Ìá½»´íÎó:", err);
+    console.error("è¡¨å•æäº¤é”™è¯¯:", err);
   }
   setTimeout(() => {
     btn.innerHTML = origText;
