@@ -108,7 +108,7 @@ document.getElementById("repairForm").addEventListener("submit", async function(
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        access_key: "YOUR_ACCESS_KEY",   // ← 替换为你的 Web3Forms key
+        access_key: "4b115ebd-5252-4630-93e2-4730c28d0b95",   // ← 替换为你的 Web3Forms key
         subject: "【壹米说电脑】新维修订单",
         from_name: "壹米电脑官网",
         ...data
