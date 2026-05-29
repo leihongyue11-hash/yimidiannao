@@ -90,7 +90,6 @@ if (searchBtn) {
   });
 }
 
-/* ===== 维修表单提交 ===== */
 /* ===== 维修表单提交(邮件通知) ===== */
 document.getElementById("repairForm").addEventListener("submit", async function(e) {
   e.preventDefault();
@@ -98,38 +97,23 @@ document.getElementById("repairForm").addEventListener("submit", async function(
   const origText = btn.innerHTML;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 提交中...';
   btn.disabled = true;
-
   try {
-    const formData = new FormData(this);
-    const data = {};
-    formData.forEach((v, k) => { data[k] = v; });
-
-    const resp = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        access_key: "4b115ebd-5252-4630-93e2-4730c28d0b95",   // ← 替换为你的 Web3Forms key
-        subject: "【壹米说电脑】新维修订单",
-        from_name: "壹米电脑官网",
-        ...data
-      })
-    });
+    const fd = new FormData(this);
+    fd.append("access_key", "4b115ebd-5252-4630-93e2-4730c28d0b95");
+    fd.append("subject", "新维修订单");
+    fd.append("from_name", "壹米电脑官网");
+    fd.delete("_honey");
+    const resp = await fetch("https://api.web3forms.com/submit", { method: "POST", body: fd });
     const result = await resp.json();
     if (result.success) {
       btn.innerHTML = '<i class="fas fa-check"></i> 提交成功！';
       btn.style.background = "linear-gradient(135deg,#22c55e,#16a34a)";
       this.reset();
-    } else {
-      throw new Error(result.message);
-    }
+    } else { throw new Error(result.message); }
   } catch (err) {
-    btn.innerHTML = '<i class="fas fa-times"></i> 提交失败，请稍后重试';
+    btn.innerHTML = '<i class="fas fa-times"></i> 提交失败';
     btn.style.background = "linear-gradient(135deg,#ef4444,#dc2626)";
     console.error("表单提交错误:", err);
   }
-  setTimeout(() => {
-    btn.innerHTML = origText;
-    btn.style.background = "";
-    btn.disabled = false;
-  }, 3000);
+  setTimeout(() => { btn.innerHTML = origText; btn.style.background = ""; btn.disabled = false; }, 3000);
 });
